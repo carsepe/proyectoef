@@ -5,8 +5,7 @@ using proyectoef;
 var builder = WebApplication.CreateBuilder(args);
 
 //builder.Services.AddDbContext<TareasContext>(p => p.UseInMemoryDatabase("TareasDB"));
-builder.Services.AddSqlServer<TareasContext>("Data Source=CARSEPE;Initial Catalog=TareasDb;user id=sa;password=12345678;TrustServerCertificate=True"
-);
+builder.Services.AddSqlServer<TareasContext>(builder.Configuration.GetConnectionString("cnTareas"));
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
