@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using proyectoef.Models;
+
 namespace proyectoef;
 
 public class TareasContext: DbContext
