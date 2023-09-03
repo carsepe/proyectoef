@@ -1,0 +1,29 @@
+# Ignora archivos y directorios generados por el sistema
+Thumbs.db
+.DS_Store
+
+# Ignora archivos de configuración de Visual Studio Code
+.vscode/
+
+# Ignora archivos compilados y binarios
+/bin/
+/obj/
+
+# Ignora paquetes y dependencias de NuGet en proyectos .NET
+/packages/
+*.user
+
+# Ignora archivos de registro y temporales
+*.log
+*.swp
+
+# Ignora directorios y archivos de entorno virtual de Python
+__pycache__/
+venv/
+*.pyc
+
+# Ignora archivos de configuración de IDE específicos
+.idea/
+*.suo
+*.user
+*.sln.docstates
